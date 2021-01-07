@@ -1,47 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/b4bcbcd0ef.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://kit.fontawesome.com/b4bcbcd0ef.js" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
 </head>
 <body>
+  <nav>
+    <div class="nav-wrapper">
+      <ul id="nav-mobile">
+        <div class="container">
+          <li><a href="index.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </div>
+      </ul>
+    </div>
 
-    <div class="topnav" id="myTopnav">
-        <a href="index.html">Home</a>
-        <a href="projects.html" class="active">Projects</a>
-        <a href="contact.html">Contact</a>
-
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+  </nav>
+  <div class="parallax-container valign-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col l8 s12 white-text">
+          <h4 class="thin-text left-align white-text valign">I'm Tess Bishop and I'm a software engineer based in Salt Lake City, Utah</h4>
+        </div>
       </div>
-      <section>
-        <h1 class="title-left">Hi, I'm Tess!!</h1>
-    <p class="left">I am a software engineer and recent graduate of General Assembly's Software Engineering Immersive.</h1>
-    <h1 class="title-left">About Me</h1>
-    <p class='left'>I bring an accelerated learning style and ambitious creativity to design and support software that I love. I have the ability to connect and communicate with customers to understand software complexities and resolve problems.</p>
+      <div class="row">
+        <div class="col l4"></div>
+          <a class="waves-effect btn-large hoverable red accent-2">View my resume</a>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/hero3.jpg"></div>
+  </div>
 
-    <p class="left">I have a background in creative problem solving and a history of working directly with customers in a variety of settings. While I was working in technical education I trained and educated instructors. This experience taught me excellent customer service skills as well as how to train new employees. 
-    </p>
-    <p class="left">This experience brought me West from Washington, DC to Denver, Colorado then eventually to Salt Lake City where I learned extensively about the outdoor industry in order to be a sales representative at Powderbird Helicopter Skiing.</p>
+  <!-- projects -->
+  <div class="container">
+    <div class="row">
+      <h2>Projects</h2>
+    </div>
+    <div class="row">
+      <div class="col s12 m3 l6">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/home.png" alt="">
+              <span class="card-title"></span>
+          </div>
+          <div class="card-content">
+            <p>project description</p>
+          </div>
+          <div class="card-action">
+            <a href="">link</a>
+          </div> 
+        </div>
+      </div>
+      <div class="col s12 m3 l6">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/profile1.png" alt="">
+              <span class="card-title"></span>
+          </div>
+          <div class="card-content">
+            <p>project description</p>
+          </div>
+          <div class="card-action">
+            <a href="">link</a>
+          </div> 
+        </div>
+      </div>
+      <div class="col s12 m3 l6">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/game.png" alt="">
+              <span class="card-title"></span>
+          </div>
+          <div class="card-content">
+            <p>project description</p>
+          </div>
+          <div class="card-action">
+            <a href="">link</a>
+          </div> 
+        </div>
+      </div>
+      <div class="col s12 m3 l6">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/game.png" alt="">
+              <span class="card-title"></span>
+          </div>
+          <div class="card-content">
+            <p>project description</p>
+          </div>
+          <div class="card-action">
+            <a href="">link</a>
+          </div> 
+        </div>
+      </div>
+    </div>  
+  </div>
+        
 
-    <p class="left">My journey to software engineering has not been traditional and it's my diverse experience that makes me a well rounded professional with a thoughtful approach to technical problem solving.</p>
-    
-    <p class="left"><a href="images/resume.pdf" target="_blank">View my resume</a></p>
-
-   
-    <h1 class="title-left">I look forward to working with you! </h1>
-    </section>
-      
-
-<script src="scripts.js"></script>    
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    $('.parallax').parallax();
+    $('.materialboxed').materialbox();
+  });
+  </script>
 </body>
 </html>
