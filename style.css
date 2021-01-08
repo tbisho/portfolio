@@ -1,7 +1,22 @@
 body {
     min-height: 200vh;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
+.container {
+    margin: 0 auto;
+}
+
+img {
+    height: auto;
+    width: 400px;
+}
+
+.section-header {
+    font-weight: 300;
+}
 .thin-text {
     font-weight: 300;
     background: rgba(96,125,139, .4);
@@ -16,4 +31,18 @@ nav {
 .image-small{
     height: 300px;
     width: 500px;
+}
+
+.icon{
+    font-size: 2em;
+    padding: 3px;
+}
+
+.icon li {
+    display: inline;
+    margin: 10px;
+}
+
+.page-footer {
+    background-color: #726C81;
 }
